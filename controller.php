@@ -6,7 +6,7 @@ use pdo\mysql\database as DB;
 
 $hello = new buildSql(DB::get_instance());
 
-echo "<pre>". "Hello";
+echo "<pre>". "Hello"."<br/>";
 // $hello->insert('BOOK1',['NUME'=>'does it work','EMAIL'=>'idk'])->go();
 //$hello->insert('accounts', ['username' => 'marcelica'])->go();
 $hello->select('book1')->go();
@@ -25,4 +25,5 @@ $hello->select('book1')->go();
 /*
 Please note that this is a controller file, not the index. In a real project using an MVC design, this would be the controller file
 Also note that the require line would probably best be used in the view file, not here. Since this repo has no VIEW file, well, here it is.
+Above are examples on how to use the crud and the clauses builders.
 */
